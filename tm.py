@@ -24,7 +24,7 @@ if uploaded_file is not None:
     if 'Passengers' not in df.columns:
         st.error("CSV file must contain a 'Passengers' column.")
     else:
-        st.write("Data successfully loaded:")
+        st.write("Data successfully loaded:(Only first 5 rows are shown)")
         st.write(df.head())
 
         # Plot the time series data
